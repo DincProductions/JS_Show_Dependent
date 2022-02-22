@@ -1,0 +1,59 @@
+<DOCTYPEHTML>
+<html>
+<body>
+<h2>JS Show Dependent</h2>
+<style>
+body {
+background-color: #55ff00 ;
+}
+.clc {
+background-color: #008CBA;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+.ROF {
+background-color:  #ff0000
+;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+</style>
+<label style="color:  #ff0000;" for="Xvalue">X value</label><br>
+   <input type="number" id="Xvalue" name="Xvalue" value="5"><br>
+<p style="color:   #001fff;" id="demo"></p>
+<br><label style="color:  #ff0000;" for="Xvalue">Rate of Change</label><br>
+   <input type="number" id="Yvalue" name="Yvalue" value="10"><br>
+<button class="clc" onclick="Degerata()">Calculate</button><br>
+<button class="ROF" onclick="Deger()">Find Rate of Change</button>
+<script>
+function Degerata() {
+let x,y;
+x=document.getElementById("Xvalue").value;
+y=x*document.getElementById("Yvalue").value;
+
+
+ document.getElementById("demo").innerHTML = "The value of y is "  + y + "." ;
+}
+function Deger() {
+let x,y;
+y=document.getElementById("Yvalue").value;
+x=y*document.getElementById("Xvalue").value;
+ document.getElementById("demo").innerHTML = "Rate Of Change is "  + y + "." ;
+}
+</script>
+</body>
+</html>
